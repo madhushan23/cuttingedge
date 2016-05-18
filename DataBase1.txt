@@ -1,0 +1,15 @@
+drop database ExamLab;
+CREATE database ExamLab;
+
+USE ExamLab;
+
+CREATE TABLE Student(
+	Nic VARCHAR(20) NOT NULL,
+	FullName VARCHAR(100) NOT NULL,
+	Email VARCHAR(50) NOT NULL,
+	Password VARCHAR(90) NOT NULL,
+	phoneNo VARCHAR(50) NOT NULL,
+	Address VARCHAR(500) NOT NULL,
+	RegDate DATE,
+	CONSTRAINT PRIMARY KEY (Nic)
+)ENGINE=INNODB;
